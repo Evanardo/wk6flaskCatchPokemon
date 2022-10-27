@@ -1,0 +1,39 @@
+<ul class="nav justify-content-center">
+  <div class="icon-box">
+    <div class="poke-ball icon" data-alt="poke-ball"></div>
+  </div>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/finder">PokeDex</a>
+  </li>
+  {% if current_user.is_authenticated %}
+  <li class="nav-item">
+    <a class="nav-link" href="/roster">Roster</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/profile">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/logout">Log Out</a>
+  </li>
+
+  {% else %}
+  <li class="nav-item">
+    <a class="nav-link" href="/login">Login</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/signup">Sign Up</a>
+  </li>
+  {% endif %}
+  <li class="nav-item-profile">
+    {% if current_user.is_authenticated %}
+    <p class="nav-link active" >Welcome {{ current_user.username }}!</p>
+    {% else %}
+    <p class="nav-link active" >Welcome Future Trainer!</p>
+    {% endif %}
+  </li>
+
+
+</ul>

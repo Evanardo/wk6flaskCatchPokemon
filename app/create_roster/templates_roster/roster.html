@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="roster-header">Your Party!</h1>
+
+{% for pokemon in pokemons %}
+<div class="roster-card">
+<div class="card-st mx-auto"
+    style="width: 18rem; border-radius: 20px; border: solid; border-color: black; background-color: rgba(245, 245, 245, 0.4);">
+    <li class="card-text-head">XP: {{ pokemon.baseXP }}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHP: {{ pokemon.base_hp }}
+    </li>
+
+
+    <div class="card-body">
+        <img src="{{pokemon.sprite}}" class="card-img-top" alt="pokemon">
+        <h5 class="card-title">{{ pokemon.pokemon.title()}}</h5>
+        <p class="card-text">Ability: {{ pokemon.ability.title() }}</p>
+        <p class="card-text">ATT: {{ pokemon.base_att }}</p>
+        <p class="card-text">DEF: {{ pokemon.base_def }}</p>
+    </div>
+
+</div>
+</div>
+{% endfor %}
+
+
+{% endblock %}

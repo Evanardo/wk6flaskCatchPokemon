@@ -1,0 +1,4 @@
+.env
+poke_venv
+__pycache__
+migrations

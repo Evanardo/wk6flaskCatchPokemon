@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="editPro-header">
+    <h1>Edit Account</h1>
+</div>
+<div class="editPro">
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        {{ form.username(class='form-control', placeholder='username', autocomplete='off') }}
+        {{ form.email(class='form-control', placeholder='email', autocomplete='off') }}
+        {{ form.password(class='form-control', placeholder='password', autocomplete='off') }}
+        <div class="buttons">
+            {{ form.submit(class='btn btn-primary') }}
+        </div>
+    </form>
+</div>
+{% endblock %}

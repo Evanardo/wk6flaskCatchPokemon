@@ -1,0 +1,121 @@
+body, html {
+    font-family: 'Pokemon Solid', sans-serif;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0)), url("images/dhqmiV.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signUp{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.signUp-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.alert{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.logIn{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.logIn-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.editPro{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.editPro-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.home-header{
+    display: flex;
+    justify-content: right;
+    margin-top: 295px;
+    flex-wrap: nowrap;
+    padding-right: 50px;
+}
+
+.home-header h1{
+    font-family: 'Pokemon Hollow', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    color:darkblue;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.finder{
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-item{
+    font-size: 25px;
+}
+.search-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.card-text-head{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    align-content: center;
+}
+
+#catch-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.roster-header{
+    display: flex;
+    justify-content: center;
+}
+
+.roster-card{
+    flex-direction:column;
+}
